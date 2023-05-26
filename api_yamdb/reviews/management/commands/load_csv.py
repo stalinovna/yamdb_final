@@ -1,9 +1,10 @@
-from django.core.management.base import BaseCommand
 import csv
-from django.contrib.auth import get_user_model
 
-from reviews.models import Review, Comment
-from reviews.models_categories import Titles, Genres, Categories, GenreTitle
+from django.contrib.auth import get_user_model
+from django.core.management.base import BaseCommand
+from reviews.models import Comment, Review
+from reviews.models_categories import Categories, Genres, GenreTitle, Titles
+
 from api_yamdb.settings import BASE_DIR
 
 User = get_user_model()

@@ -3,7 +3,7 @@ from django.contrib.auth import get_user_model
 from django.core.validators import RegexValidator
 from rest_framework import serializers
 from rest_framework.validators import UniqueValidator
-from reviews.models import Comment, Review, Categories, Genres, Title
+from reviews.models import Categories, Comment, Genres, Review, Title
 
 User = get_user_model()
 
